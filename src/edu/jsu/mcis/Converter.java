@@ -67,7 +67,6 @@ public class Converter {
             List<String[]> full = reader.readAll();
             Iterator<String[]> iterator = full.iterator();
             
-            // INSERT YOUR CODE HERE
             JSONObject jsonObject = new JSONObject();
             
             String[] headings = iterator.next();
@@ -117,8 +116,7 @@ public class Converter {
 
             StringWriter writer = new StringWriter();
             CSVWriter csvWriter = new CSVWriter(writer, ',', '"', '\n');
-            
-            // INSERT YOUR CODE HERE
+           
             JSONParser parser = new JSONParser();
             JSONObject jsonObject = (JSONObject) parser.parse(jsonString);
             
